@@ -1,5 +1,4 @@
 """fontTools.misc.bezierTools.py -- tools for working with bezier path segments.
-Rewritten to elimate the numpy dependency
 """
 
 
