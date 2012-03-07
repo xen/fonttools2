@@ -15,7 +15,7 @@ __all__ = [
     "solveCubic",
 ]
 
-from arrayTools import calcBounds
+from fontTools.misc.arrayTools import calcBounds
 
 epsilon = 1e-12
 
@@ -49,9 +49,8 @@ def calcCubicBounds(pt1, pt2, pt3, pt4):
         (0, 0, 100, 75.0)
         >>> calcCubicBounds((0, 0), (50, 0), (100, 50), (100, 100))
         (0.0, 0.0, 100, 100)
-        >>> xMin, yMin, xMax, yMax = calcCubicBounds((50, 0), (0, 100), (100, 100), (50, 0))
-        >>> round(xMin, 10), yMin, round(xMax, 10), yMax
-        (35.566243270299999, 0, 64.433756729699994, 75.0)
+        >>> print "%f %f %f %f" % calcCubicBounds((50, 0), (0, 100), (100, 100), (50, 0))
+        35.566243 0.000000 64.433757 75.000000
     """
     (ax, ay), (bx, by), (cx, cy), (dx, dy) = calcCubicParameters(pt1, pt2, pt3, pt4)
     # calc first derivative
