@@ -177,8 +177,6 @@ class SFNTWriter:
 		self.file.seek(self.tables['head'].offset + 8)
 		self.file.write(struct.pack(">L", checksumadjustment))
 
-#	def calcMasterChecksum_new(self, directory):
-#		...
 
 # -- sfnt directory helpers and cruft
 
