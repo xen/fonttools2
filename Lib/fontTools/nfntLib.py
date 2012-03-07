@@ -269,7 +269,7 @@ class Glyph:
 
 def dataFromFile(pathOrFSSpec, nameOrID="", resType='NFNT'):
 	from Carbon import Res
-	resref = Res.FSpOpenResFile(pathOrFSSpec, 1)	# readonly
+	resref = Res.FSOpenResFile(pathOrFSSpec, 1)	# readonly
 	try:
 		Res.UseResFile(resref)
 		if not nameOrID:

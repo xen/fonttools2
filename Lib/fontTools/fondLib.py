@@ -479,7 +479,7 @@ class BitmapFontFile:
 		else:
 			raise error, 'mode should be either "r" or "w"'
 		self.mode = mode
-		self.resref = Res.FSpOpenResFile(path, permission)
+		self.resref = Res.FSOpenResFile(path, permission)
 		Res.UseResFile(self.resref)
 		self.path = path
 		self.fonds = []
