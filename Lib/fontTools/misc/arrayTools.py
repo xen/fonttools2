@@ -3,9 +3,6 @@
 # name of this module (not).
 #
 
-"""
-Rewritten to elimate the numpy dependency
-"""
 
 import math
 
