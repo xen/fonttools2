@@ -63,7 +63,7 @@ TrueType/OpenType fonts to and from an XML-based format.
 """
 
 setup(
-		name = "fonttools",
+		name = "fonttools2",
 		version = "2.3",
 		description = "Tools to manipulate font files",
 		author = "Just van Rossum",
@@ -97,6 +97,9 @@ setup(
 				libraries=[],
 			)
 		],
+	    install_requires=[
+	        'numpy',
+	    ],
 		scripts = ["Tools/ttx"],
 		console = ["Tools/ttx"],
 		cmdclass = {"build_ext": build_ext_optional},
